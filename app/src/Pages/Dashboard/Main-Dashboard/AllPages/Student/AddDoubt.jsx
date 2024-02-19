@@ -145,9 +145,9 @@ const AddDoubt = () => {
                     required
                   >
                     <option value="">Select teacher</option>
-                    <option value="Piyush Agrawal">Shubham Jaiswal</option>
-                    <option value="Ankit Yadav">Ravi</option>
-                    <option value="Santosh">Adhiraj</option>
+                    <option value="Shubham Jaiswal">Shubham Jaiswal</option>
+                    <option value="Ravi">Ravi</option>
+                    <option value="Adhiraj">Adhiraj</option>
                   </select>
                 </div>
               </div>
