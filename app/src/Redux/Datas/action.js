@@ -5,7 +5,7 @@ import axios from "axios";
 export const CreateReport = (data) => async (dispatch) => {
   try {
     const res = await axios.post(
-      "http://localhost:3001/reports/create",
+      "http:///reports/create",
       data
     );
     console.log(res);
@@ -19,7 +19,7 @@ export const CreateReport = (data) => async (dispatch) => {
 export const AddDoubts = (data) => async () => {
   try {
     const res = await axios.post(
-      "http://localhost:3001/doubts/create",
+      "https://aps-managing-system-i9z8.vercel.app/doubts/create",
       data
     );
     return res.data;
@@ -33,7 +33,7 @@ export const GetDoubts = (data) => async (dispatch) => {
   try {
     dispatch({ type: types.GET_DOUBT_REQUEST });
     const res = await axios.post(
-      "http://localhost:3001/doubts",
+      "https://aps-managing-system-i9z8.vercel.app/doubts",
       data
     );
     dispatch({
@@ -49,7 +49,7 @@ export const GetDoubts = (data) => async (dispatch) => {
 export const AddNotice = (data) => async (dispatch) => {
   try {
     const res = await axios.post(
-      "http://localhost:3001/notices/create",
+      "https://aps-managing-system-i9z8.vercel.app/notices/create",
       data
     );
     return res.data;
@@ -63,7 +63,7 @@ export const deleteDoubt = (id) => async (dispatch) => {
   try {
     dispatch({ type: types.DELETE_DOUBT_REQUEST });
     await axios.delete(
-      `http://localhost:3001/doubts/${id}`
+      `https://aps-managing-system-i9z8.vercel.app/doubts/${id}`
     );
     dispatch({
       type: types.DELETE_DOUBT_SUCCESS,
@@ -79,7 +79,7 @@ export const GetNotices = () => async (dispatch) => {
   try {
     dispatch({ type: types.GET_NOTICE_REQUEST });
     const res = await axios.get(
-      `http://localhost:3001/notices`
+      `https://aps-managing-system-i9z8.vercel.app/notices`
     );
     console.log(res.data);
     dispatch({
@@ -96,7 +96,7 @@ export const GetAllData = () => async (dispatch) => {
   try {
     dispatch({ type: types.GET_ALLDATA_REQUEST });
     const res = await axios.get(
-      `http://localhost:3001/schools`
+      `https://aps-managing-system-i9z8.vercel.app/schools`
     );
     dispatch({
       type: types.GET_ALLDATA_SUCCESS,
@@ -111,7 +111,7 @@ export const GetAllData = () => async (dispatch) => {
 export const GetAllReport = (data) => async (dispatch) => {
   try {
     const res = await axios.post(
-      `http://localhost:3001/reports`,
+      `https://aps-managing-system-i9z8.vercel.app/reports`,
       data
     );
     dispatch({
@@ -127,7 +127,7 @@ export const GetAllReport = (data) => async (dispatch) => {
 export const DeleteReports = (id) => async (dispatch) => {
   try {
     const res = await axios.delete(
-      `http://localhost:3001/reports/${id}`
+      `https://aps-managing-system-i9z8.vercel.app/reports/${id}`
     );
     console.log(res.data);
     dispatch({
