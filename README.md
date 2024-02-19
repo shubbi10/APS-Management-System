@@ -9,12 +9,17 @@ Go to the project folder
 
 
 Install dependencies
+  
   ``npm install``
 
 
 Start the server
 
   ``npm run build``
+
+Open the page 
+
+    ``serve -s build``
 
 
 # APS Management System
