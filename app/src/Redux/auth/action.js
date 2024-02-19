@@ -6,7 +6,7 @@ export const StudentLogin = (data) => async (dispatch) => {
   try {
     dispatch({ type: types.LOGIN_STUDENT_REQUEST });
     const res = await axios.post(
-      "http://localhost:3001/teachers/login",
+      "https://aps-managing-system-i9z8.vercel.app/students/login",
       data
     );
     dispatch({
@@ -33,7 +33,7 @@ export const TeacherLogin = (data) => async (dispatch) => {
   try {
     dispatch({ type: types.LOGIN_TEACHER_REQUEST });
     const res = await axios.post(
-      "http://localhost:3001/teachers/login",
+      "https://aps-managing-system-i9z8.vercel.app/teachers/login",
       data
     );
     dispatch({
@@ -60,7 +60,7 @@ export const AdminLogin = (data) => async (dispatch) => {
   try {
     dispatch({ type: types.LOGIN_ADMIN_REQUEST });
     const res = await axios.post(
-      "http://localhost:3001/teachers/login",
+      "https://aps-managing-system-i9z8.vercel.app/admin/login",
       data
     );
     dispatch({
@@ -86,7 +86,7 @@ export const AdminLogin = (data) => async (dispatch) => {
 export const TeacherRegister = (data) => async () => {
   try {
     const res = await axios.post(
-      "http://localhost:3001/teachers/login",
+      "https://aps-managing-system-i9z8.vercel.app/teachers/register",
       data
     );
     return res.data;
@@ -99,7 +99,7 @@ export const TeacherRegister = (data) => async () => {
 export const StudentRegister = (data) => async () => {
   try {
     const res = await axios.post(
-      "http://localhost:3001/students/register",
+      "https://aps-managing-system-i9z8.vercel.app/students/register",
       data
     );
     return res.data;
@@ -112,7 +112,7 @@ export const StudentRegister = (data) => async () => {
 export const AdminRegister = (data) => async () => {
   try {
     const res = await axios.post(
-      "http://localhost:3001/admin/register",
+      "https://aps-managing-system-i9z8.vercel.app/admin/register",
       data
     );
     return res.data;
@@ -125,7 +125,7 @@ export const AdminRegister = (data) => async () => {
 export const BusRegister = (data) => async (dispatch) => {
   try {
     await axios.post(
-      "http://localhost:3001/bus/add",
+      "https://aps-managing-system-i9z8.vercel.app/bus/add",
       data
     );
   } catch (error) {
@@ -149,7 +149,7 @@ export const UpdateStudent = (data, id) => async (dispatch) => {
   try {
     dispatch({ type: types.EDIT_STUDENT_REQUEST });
     const res = await axios.patch(
-      `http://localhost:3001/students/${id}`,
+      `https://aps-managing-system-i9z8.vercel.app/students/${id}`,
       data
     );
     dispatch({ type: types.EDIT_STUDENT_SUCCESS, payload: res.data.user });
@@ -163,7 +163,7 @@ export const UpdateTeacher = (data, id) => async (dispatch) => {
   try {
     dispatch({ type: types.EDIT_TEACHER_REQUEST });
     const res = await axios.patch(
-      `http://localhost:3001/teachers/${id}`,
+      `https://aps-managing-system-i9z8.vercel.app/teachers/${id}`,
       data
     );
     dispatch({ type: types.EDIT_TEACHER_SUCCESS, payload: res.data.user });
@@ -176,7 +176,7 @@ export const UpdateTeacher = (data, id) => async (dispatch) => {
 export const SendPassword = (data) => async () => {
   try {
     const res = await axios.post(
-      `http://localhost:3001/admin/password`,
+      `https://aps-managing-system-i9z8.vercel.app/admin/password`,
       data
     );
     return res.data;
@@ -189,7 +189,7 @@ export const SendPassword = (data) => async () => {
 export const forgetPassword = (data) => async () => {
   try {
     const res = await axios.post(
-      `http://localhost:3001/admin/forgot`,
+      `https://aps-managing-system-i9z8.vercel.app/admin/forgot`,
       data
     );
     return res.data;
