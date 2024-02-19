@@ -16,7 +16,7 @@ const quizRouter = require('./routes/quiz.route')
 
 const app = express()
 app.use(cors({
-  origin: ["https://aps-managing-system.vercel.app/"],
+  origin: ["https://aps-managing-system.vercel.app"],
   methods: ["POST", "GET"],
   credentials: true
 }));
