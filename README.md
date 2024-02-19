@@ -5,6 +5,7 @@
 
 Go to the project folder
 
+### Open folder ``APS-Managing-System``
 
 
 Install dependencies
@@ -50,5 +51,5 @@ APS management system is  a software to control all the management related to a 
 - Create and resolve Doubts
 
 
-Project Owner:SHUBHAM KUMAR
+***Project Owner:SHUBHAM KUMAR***
 
