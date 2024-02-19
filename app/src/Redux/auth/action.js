@@ -6,7 +6,7 @@ export const StudentLogin = (data) => async (dispatch) => {
   try {
     dispatch({ type: types.LOGIN_STUDENT_REQUEST });
     const res = await axios.post(
-      "http://localhost:3001/students/login",
+      "https://aps-managing-system-u8m2.vercel.app/students/login",
       data
     );
     dispatch({
