@@ -137,5 +137,5 @@ export const DeleteReports = (id) => async (dispatch) => {
   } catch (error) {
     console.log(error);
   }
-};
+}; 
 
