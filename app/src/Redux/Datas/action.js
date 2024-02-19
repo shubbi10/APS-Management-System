@@ -5,7 +5,7 @@ import axios from "axios";
 export const CreateReport = (data) => async (dispatch) => {
   try {
     const res = await axios.post(
-      "http:///reports/create",
+      "https://aps-managing-system-i9z8.vercel.app/reports/create",
       data
     );
     console.log(res);
