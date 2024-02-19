@@ -19,7 +19,7 @@ Start the server
 
 Open the page 
 
-    ``serve -s build``
+  ``serve -s build``
 
 
 # APS Management System
