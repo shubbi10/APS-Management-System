@@ -33,7 +33,7 @@ export const TeacherLogin = (data) => async (dispatch) => {
   try {
     dispatch({ type: types.LOGIN_TEACHER_REQUEST });
     const res = await axios.post(
-      "http://localhost:3001/teachers/login",
+      "https://aps-managing-system-u8m2.vercel.app/teachers/login",
       data
     );
     dispatch({
@@ -60,7 +60,7 @@ export const AdminLogin = (data) => async (dispatch) => {
   try {
     dispatch({ type: types.LOGIN_ADMIN_REQUEST });
     const res = await axios.post(
-      "http://localhost:3001/admin/login",
+      "https://aps-managing-system-u8m2.vercel.app/admin/login",
       data
     );
     dispatch({
@@ -86,7 +86,7 @@ export const AdminLogin = (data) => async (dispatch) => {
 export const TeacherRegister = (data) => async () => {
   try {
     const res = await axios.post(
-      "http://localhost:3001/teachers/register",
+      "https://aps-managing-system-u8m2.vercel.app/teachers/register",
       data
     );
     return res.data;
