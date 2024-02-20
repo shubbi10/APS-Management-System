@@ -1,6 +1,18 @@
 > [Working Project](https://aps-managing-system.vercel.app
 /)
 
+**Student Login**
+Id: 10
+Password:Lucknow
+
+**Teacher Login**
+Id: 444
+Password:1995
+
+**Admin Login**
+Id: 56
+Password:Ronaldo
+
 
 
 Go to the project folder
